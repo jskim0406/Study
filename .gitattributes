@@ -6,3 +6,4 @@ Math/1. filter=lfs diff=lfs merge=lfs -text
 Linear_Algebra,Optimization,Matirx_derivative.pdf” filter=lfs diff=lfs merge=lfs -text
 1.[[:space:]]Linear_Algebra,Optimization,Matirx_derivative.pdf filter=lfs diff=lfs merge=lfs -text
 4._Approximation_rank-k.pdf filter=lfs diff=lfs merge=lfs -text
+6.[[:space:]]precision[[:space:]]-[[:space:]]recall[[:space:]]curve,[[:space:]]mAP.pdf filter=lfs diff=lfs merge=lfs -text

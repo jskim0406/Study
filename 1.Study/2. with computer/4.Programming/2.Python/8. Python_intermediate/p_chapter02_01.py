@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-#
 # chapter 02-01
 # 객체지향 프로그래밍(OOP) (<-> 절차지향) 장점 : 코드 재사용, 코드 중복 방지, 유지 보수 쉬움, 대형 프로젝트 관리 용이
 # 규모가 큰 프로젝트 수행 시, 과거에는 함수 중심으로 코딩됨(함수에서 함수 호출하며 복잡해짐) -> 데이터가 방대해질 수록 개선 어려움 (구조 복잡)
@@ -37,7 +38,7 @@ car_detail_list = [
 
 # del car_company_list[1]
 # del car_detail_list[1]
-# 
+#
 # print(car_company_list, car_detail_list)
 
 
@@ -60,16 +61,16 @@ class Car():
     def __init__(self,company,detail):
         self._company = company
         self._detail = detail
-        
+
     # print(class object) 시 리턴 값 ex) print(car1)
     def __str__(self):
         return 'str : {} - {}'.format(self._company,self._detail)
-        
-    # class object 호출 시 리턴 값 ex) car1 
+
+    # class object 호출 시 리턴 값 ex) car1
     def __repr__(self):
         return 'repr : {} - {}'.format(self._company,self._detail)
-        
-        
+
+
 car1 = Car('Ferrari',{'color' : 'white','horse_power' : 400})
 car2 = Car('BMW',{'color' : 'black','horse_power' : 270})
 car3 = Car('Audi',{'color' : 'orange','horse_power' : 350})
@@ -98,10 +99,6 @@ print()
 
 for x in car_list:
     print(x)
-    
+
 print()
 print()
-
-
-
-

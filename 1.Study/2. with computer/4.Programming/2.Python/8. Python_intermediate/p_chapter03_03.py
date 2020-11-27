@@ -86,4 +86,23 @@ print(p1._asdict())
 print(type(p1._asdict()))
 print(p7._asdict())
 print(type(p7._asdict()))
-print()
+
+# 실습!
+# 한 반에 20명씩 객체 만들기 (총 4개 반, 따라서 총 80명 해당 객체 생성 )
+Classes = namedtuple('Classes', 'rank num_student')
+
+ranks = 'A B C D'.split(' ')
+num_students = [str(num) for num in range(1,21)]
+
+print(ranks, num_students, sep='\n')
+
+students = [Classes(rank, num_student)
+            for rank in ranks
+                for num_student in num_students]
+
+students2 = [Classes(rank, num_student)
+            for rank in 'A B C D'.split(' ')
+                for num_student in [str(num) for num in range(1,21)]
+                ]
+
+print(students2)
